@@ -11,9 +11,9 @@ services:
       SONAR_JDBC_URL: jdbc:postgresql://db:5432/sonar
       SONAR_JDBC_USERNAME: sonar
       SONAR_JDBC_PASSWORD: sonar
-      SONAR_CE_JAVAOPTS: "-Xmx8G -Xms8G"
-      SONAR_SEARCH_JAVAOPTS: "-Xmx8G -Xms8G"
-      SONAR_WEB_JAVAOPTS: "-Xmx8G -Xms8G"
+      SONAR_CE_JAVAOPTS: "-Xmx4G -Xms4G"
+      SONAR_SEARCH_JAVAOPTS: "-Xmx2G -Xms2G"
+      SONAR_WEB_JAVAOPTS: "-Xmx1G -Xms1G"
       SONAR_WEB_JAVAADDITIONALOPTS: "-javaagent:./extensions/plugins/sonarqube-community-branch-plugin-${SONARQUBE_BRANCH_PLUGIN}.jar=web"
       SONAR_CE_JAVAADDITIONALOPTS: "-javaagent:./extensions/plugins/sonarqube-community-branch-plugin-${SONARQUBE_BRANCH_PLUGIN}.jar=web"
     volumes:
